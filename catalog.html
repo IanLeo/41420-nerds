@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Нёрдс — Каталог</title>
+    <link href="css/normalize.css" type="text/css" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+  	<header class="main-container">
+  	 <div class="container">
+  	 	<a class="main-logo" href="#"><img src="img/nerds-logo.svg" alt="">\</a>
+  	 	<nav class="main-navigation">
+  				<ul>
+  					<li>
+  						<a href="#">Студия</a>
+  					</li>
+  					<li>
+  						<a href="#">Клиенты</a>
+  					</li>
+  					<li>
+  						<a href="#">Магазин</a>
+  					</li>
+  					<li>
+  						<a href="#">Контакты</a>
+  					</li>
+  				</ul>
+  				<div class="user-block">
+  					<a class="cart" href="#">Корзина</a>
+  				</div>
+  			</nav>
+  	 </div>
+  	</header>
+  	<main class="container">
+      <h1 class="shop-title">Добро пожаловать в магазин готовых макетов</h1>
+  		<div class="shop">
+  			<section class="catalog-filter">
+          <form action="#" method="get">
+          <div class="price-filter">
+            <h2 class="filter-title">Стоимость:</h2>
+            <div class="price-slider">
+              <!-- Пока не понял как разметить ползунок -->
+            </div>
+            <label for="min-price-field">От</label>
+            <input type="text" id="min-price-field" name="min-price">
+            <label for="max-price-field">До</label>
+            <input type="text" id="max-price-field" name="max-price">
+          </div>
+          <div class="grid-type">
+            <h2 class="filter-title">Сетка:</h2>
+            <ul class="grid-type-list">
+              <li>
+                <input type="radio" name="grid" value="adaptive" id="adaptive-grid" checked>
+                <label for="adaptive-grid">Адаптивная</label>
+              </li>
+              <li>
+                <input type="radio" name="grid" value="fixed" id="fixed-grid">
+                <label for="fixed-grid">Фиксированная</label>
+              </li>
+              <li>
+                <input type="radio" name="grid" value="fluid" id="fluid-grid">
+                <label for="fluid-grid">Резиновая</label>
+              </li>
+            </ul>
+          </div>
+          <div class="feauters">
+            <h2 class="feauters-title">Особенности:</h2>
+            <ul class="feauters-list">
+              <li>
+                <input type="checkbox" name="feauters" value="slider" id="feauters-slider" checked>
+                <label for="feauters-slider">Слайдер</label>
+              </li>
+              <li>
+                <input type="checkbox" name="feauters" value="promo-block" id="feauters-promo-block">
+                <label for="feauters-promo-block">Блок преимуществ</label>
+              </li>
+              <li>
+                <input type="checkbox" name="feauters" value="news" id="feauters-news" checked>
+                <label for="feauters-news">Новости</label>
+              </li>
+              <li>
+                <input type="checkbox" name="feauters" value="gallery" id="feauters-gallery">
+                <label for="feauters-gallery">Галерея</label>
+              </li>
+              <li>
+                <input type="checkbox" name="feauters" value="cart" id="feauters-cart">
+                <label for="feauters-cart">Корзина</label>
+              </li>
+            </ul>
+          </div>
+          <input type="submit" value="Показать">
+          </form>   
+        </section>
+        <section class="catalog">
+          <div class="catalog-sort">
+            <div class="catalog-sort-list">
+              <ul class="sort-list">
+                <li class="sort-list-title">
+                  Сортировать:
+                </li>
+                <li>
+                  <a href="#">По цене</a>
+                </li>
+                <li>
+                  <a href="#">По типу</a>
+                </li>
+                <li>
+                  <a href="#">По функционалу</a>
+                </li>
+              </ul>
+            </div>
+            <div class="items-show-type">
+              <a class="items-show-top" href="#"></a>
+              <a class="items-show-low" href="#"></a>
+            </div>
+          </div>
+          <div class="catalog-products">
+            <div class="catalog-products-list">
+              <ul class="products-list">
+                <li>
+                  <a class="product" href="#">
+                    <img src="img/products1.jpg">
+                  </a>
+                </li>
+                <li>
+                  <a class="product" href="#">
+                    <img src="img/products2.jpg">
+                  </a>
+                </li>
+                <li>
+                  <a class="product" href="#">
+                    <img src="img/products3.jpg">
+                  </a>
+                </li>
+                <li>
+                  <a class="product" href="#">
+                    <img src="img/products4.jpg">
+                  </a>
+                </li>
+                <li>
+                  <a class="product" href="#">
+                    <img src="img/products5.jpg">
+                  </a>
+                </li>
+                <li>
+                  <a class="product" href="#">
+                    <img src="img/products1.jpg">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="catalog-products-pagination">
+              <ul class="products-pagination">
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a class="btn" href="#">Следующая</a>
+              </ul>
+            </div>
+          </div>
+        </section>
+  		</div>
+  	</main>
+  	<section class="сontacts">
+      <div class="container">
+        <div class="сontacts-address">
+          <h2 class="сontacts--title">Nёrds design studio</h2>
+          <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8тел.</p>
+          <p>+7 (812) 275-75-75</p>
+          <a class="btn" href="#">Напишите нам</a>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="container">
+        <section class="footer-social">
+          <a class="social-btn social-btn-vk" href="#"></a>
+          <a class="social-btn social-btn-fb" href="#"></a>
+          <a class="social-btn social-btn-inst" href="#"></a>
+        </section>
+        <section class="footer-right">
+          <b class="call-to-action">Давайте дружить, это выгодно!</b>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
