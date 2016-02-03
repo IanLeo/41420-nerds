@@ -1,0 +1,64 @@
+/* Стили для текста */
+
+body {
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 16px;
+}
+
+h1 {
+	font-size: 40px;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.main-navigation a {
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.btn {
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+b {
+	font-size: 36px;
+	text-transform: none;
+}
+
+i {
+	font-size: 16px;
+	font-style: normal;
+	text-transform: uppercase;
+}
+
+.index-content-subtitle {
+	font-size: 16px;
+	font-style: normal;
+	text-transform: uppercase;
+}
+
+.price-filter label {
+	font-size: 16px;
+	font-style: normal;
+	text-transform: uppercase;
+}
+
+.sort-list {
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.products-pagination li {
+		font-size: 12px;
+	text-transform: uppercase;
+}
