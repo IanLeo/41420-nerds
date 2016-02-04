@@ -4,13 +4,44 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Нёрдс — Главная</title>
+    <!-- 
+      Давай использовать в качестве разделителей для отступов на всем проекте 4 пробела 
+      И в html, и в css
+
+      Сейчас у тебя табы в перемешку с пробелами
+     -->
     <link href="css/normalize.css" type="text/css" rel="stylesheet">
+    <!-- 
+      В стили тоже загляни, там дал пару комментариев 
+     -->
     <link href="css/style.css" type="text/css" rel="stylesheet">
   </head>
   <body>
   	<header class="main-container">
   	 <div class="container">
-  	 	<a class="main-logo" href="#"><img src="img/nerds-logo.png" width="139" height="56"></a>
+      <!-- 
+        Внимательней с отступами
+
+        Нужно соблюдать единый стиль оформления
+        Все теги что внутри нужно начинать с новой строки
+
+        Сейчас скажем <a class="main-logo"> находится на одном уровне с <div class="container">, а должен быть вложенным и с отступом
+        img внутри main-logo лучше тоже начать с новой строки
+
+        Итак, как должно быть
+
+        <header class="main-container">
+            <div class="container">
+                <a class="main-logo" href="#">
+                    <img src="img/nerds-logo.png" width="139" height="56">
+                </a>
+            </div>
+            <nav class="main-navigation">
+                …
+            </nav>
+        </header>
+       -->
+  	 	<a class="main-logo" href="#"><img src="img/nerds-logo.png" width="139" height="56"></a> <!-- Для изображений alt обязателен. В данном случае вполне можно написать название сайта - Nerds -->
   	 	<nav class="main-navigation">
   				<ul>
   					<li>
@@ -36,8 +67,17 @@
   		<section class="promo-gallery"></section>
   		<div class="products">
   			<article class="products-item">
+          <!-- 
+            Figure в данном случае не стоит использовать
+            
+            Figure обычно нужен для того, чтобы выделить какой-то элемент на странице и сделать на нем акцент. Это содержимое может быть независимым и скажем если ты будешь рассматривать контент внутри этого блока отдельно от всего сайта, то поймешь о чем шла речь
+            Хороший пример - это цитаты в журналах, которые вырывают из контекста чтобы сделать на них акцент (они могут и зачастую даже дублируются в основном тексте)
+            Изображением внутри figure может быть скажем какой-нибудь график, например, график роста курса рубля относительно других валют. Мы, увидев такое изображение, все поймем и без текста статьи
+
+            В нашем же случае у нас просто изображение, которое используется больше для оформления, нежели как содержимое.
+           -->
   				<figure class="products-img">
-  					<img src="img/products1.jpg">
+  					<img src="img/products1.jpg"> <!-- нужно задать размеры + alt. Alt можно указать пустым, потому что ниже текст "веб-сайты" как раз поясняет это изображение -->
   				</figure>
   				<h2 class="products-item-title">Веб-сайты</h2>
   				<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
@@ -61,22 +101,22 @@
   			</article>
   		</div>
   		<div class="index-content">
-  			<div "index-content-left">
-  				<b class="index-content-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+  			<div "index-content-left"> <!-- Пропустил слово class -->
+  				<b class="index-content-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b> <!-- Для заголовков лучше использовать теги h1-h6, а b тут совсем не подходит -->
   				<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
-  				<b class="index-content-subtitle">Выполняем заказы на разработку:</b>
+  				<b class="index-content-subtitle">Выполняем заказы на разработку:</b> <!-- Аналогично комментарию выше -->
   				<ul class="index-content-list">
   					<li>Веб-сайтов любой сложности</li>
   					<li>Мобильных приложений для iOS и Android</li>
   					<li>Слайдшоу и видео для корпоративных презентаций</li>
   				</ul>
   			</div>
-  			<div "index-content-right">
+  			<div "index-content-right"> <!-- Пропустил слово class -->
   				<figure class="logo">
   					<img src="img/nerds-logo-bigger.png" width="187" height="75">
   					<i>Since 2004</i>
   				</figure>
-  				<b class="index-content-subtitle">Как мы работаем</b>
+  				<b class="index-content-subtitle">Как мы работаем</b> <!-- Аналогично комментарию выше про b -->
   				<ul class="index-content-list">
   					<li>С самоотдачей 146%</li>
   					<li>Соблюдая сроки на 100%</li>
@@ -84,11 +124,11 @@
   				</ul>
   			</div>
   		</div>
-  		<div class="projects-done">
+  		<div class="projects-done"> <!-- Это не список готовых проектов, а список партнеров -->
   			<ul class="projects-done-list">
   				<li>
   					<a class="projects-done-item" href="#">
-  						<img src="img/#" alt="">
+  						<img src="img/#" alt=""> <!-- В данном случае в alt как раз было бы неплохо указать название партнеров -->
   					</a>
   				</li>
   				<li>
@@ -116,13 +156,13 @@
   	</section>
   	<footer class="main-footer">
   		<div class="container">
-  			<section class="footer-social">
+  			<section class="footer-social"> <!-- Тег section лучше использовать, если внутри блока есть заголовок -->
   				<a class="social-btn social-btn-vk" href="#"></a>
           <a class="social-btn social-btn-fb" href="#"></a>
           <a class="social-btn social-btn-inst" href="#"></a>
   			</section>
   			<section class="footer-right">
-  				<b class="call-to-action">Давайте дружить, это выгодно!</b>
+  				<b class="call-to-action">Давайте дружить, это выгодно!</b> <!-- Думаю, что тут тоже лучше подойдет заголовок. К примеру, h3 -->
   				<p>Скидка 10% для друзей из социальных сетей.</p>
   			</section>
   		</div>
