@@ -1,81 +1,63 @@
-/* Стили для текста */
-
-/*
-	Давай использовать тут тоже 4 пробела
-	Сейчас tab и обрати внимание, в конце файла в .products-pagination li есть строка с 2-мя табами
-
-	Давай придерживаться стиля написания css как было в моем примере
-    https://dl.dropboxusercontent.com/u/5699542/htmlacademy_default_project.zip - вот тут для вас собрал распространенные ошибки по CSS и описал как лучше всего писать стили правильно, красиво и аккуратно
-*/
-
 body {
 	font-family: Roboto, Arial, sans-serif;
-	font-size: 16px;
+    font-size: 16px;
 }
 
-/*
-	Ты для заголовков используешь классы 
-	Все оформление делай тоже через них, старайся по-минимому использовать оформление через теги
-	Глобально лучше вообще правила не описывать. 
-
-	Для тегов только через каскад желательно, то есть скажем main-navigation ul и опять же, это тоже не во всех случаях уместно
-	Подробнее разберем это позже
-*/
-
-h1 {
-	font-size: 40px;
-	text-transform: uppercase;
+.main-navigation {
+    font-size: 14px;
+    text-transform: uppercase;
 }
 
-h2 {
-	font-size: 18px;
-	text-transform: uppercase;
-}
-
-h3 {
-	font-size: 16px;
-	text-transform: uppercase;
-}
-
-.main-navigation a {
-	font-size: 14px;
-	text-transform: uppercase;
+.medium-title {
+    font-size: 18px;
+    text-transform: uppercase;
 }
 
 .btn {
-	font-size: 12px;
-	text-transform: uppercase;
+    font-size: 12px;
+    text-transform: uppercase;
 }
 
-b {
-	font-size: 36px;
-	text-transform: none;
+.btn-price {
+    font-size: 18px;
+    text-transform: uppercase;
 }
 
-i {
-	font-size: 16px;
-	font-style: normal;
-	text-transform: uppercase;
+.big-title {
+    font-size: 36px;
 }
 
-.index-content-subtitle {
-	font-size: 16px;
-	font-style: normal;
-	text-transform: uppercase;
+.small-title {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.logo i {
+    font-size: 16px;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.big-uppercase-title {
+    font-size: 36px;
+    text-transform: uppercase;
 }
 
 .price-filter label {
-	font-size: 16px;
-	font-style: normal;
-	text-transform: uppercase;
+    font-size: 16px;
+    text-transform: uppercase;
 }
 
 .sort-list {
-	font-size: 12px;
-	text-transform: uppercase;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.product-details p {
+    font-size: 14px;
 }
 
 .products-pagination li {
-		font-size: 12px;
-	text-transform: uppercase;
+    font-size: 12px;
+    text-transform: uppercase;
 }

@@ -1,198 +1,228 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Нёрдс — Каталог</title>
-    <link href="css/normalize.css" type="text/css" rel="stylesheet">
-    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Нёрдс — Каталог</title>
+        <link href="css/normalize.css" type="text/css" rel="stylesheet">
+        <link href="css/style.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="main-container">
+            <div class="container">
+                <a class="main-logo" href="#">
+                    <img src="img/nerds-logo.png" width="139" height="56">
+                </a> 
+                <nav class="main-navigation">
+                    <ul>
+                        <li>
+                            <a href="#">Студия</a>
+                        </li>
+                        <li>
+                            <a href="#">Клиенты</a>
+                        </li>
+                        <li>
+                            <a href="#">Магазин</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="user-block">
+                        <a class="cart" href="#">Корзина</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main class="container">
+            <h1 class="big-uppercase-title">Добро пожаловать в магазин готовых макетов</h1>
+            <div class="shop">
+                <section class="catalog-filter">
+                    <form action="#" method="get">
+                        <div class="price-filter">
+                            <h3 class="medium-title">Стоимость:</h3>
+                            <div class="price-slider">
+                            <!-- Пока не понял как разметить ползунок -->
+                            </div>
+                            <label for="min-price-field">От</label>
+                            <input type="text" id="min-price-field" name="min-price">
+                            <label for="max-price-field">До</label>
+                            <input type="text" id="max-price-field" name="max-price">
+                        </div>
+                        <div class="grid-type">
+                            <h3 class="medium-title">Сетка:</h3>
+                            <ul class="grid-type-list">
+                                <li>
+                                    <input type="radio" name="grid" value="adaptive" id="adaptive-grid" checked>
+                                    <label for="adaptive-grid">Адаптивная</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="grid" value="fixed" id="fixed-grid">
+                                    <label for="fixed-grid">Фиксированная</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="grid" value="fluid" id="fluid-grid">
+                                    <label for="fluid-grid">Резиновая</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="feauters">
+                            <h3 class="medium-title">Особенности:</h3>
+                            <ul class="feauters-list">
+                                <li>
+                                    <input type="checkbox" name="feauters" value="slider" id="feauters-slider" checked>
+                                    <label for="feauters-slider">Слайдер</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="feauters" value="promo-block" id="feauters-promo-block">
+                                    <label for="feauters-promo-block">Блок преимуществ</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="feauters" value="news" id="feauters-news" checked>
+                                    <label for="feauters-news">Новости</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="feauters" value="gallery" id="feauters-gallery">
+                                    <label for="feauters-gallery">Галерея</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="feauters" value="cart" id="feauters-cart">
+                                    <label for="feauters-cart">Корзина</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <input class="btn" type="submit" value="Показать">
+                    </form>   
+                </section>
+                <section class="catalog">
+                    <div class="catalog-sort">
+                        <div class="catalog-sort-list">
+                            <ul class="sort-list">
+                                <li class="sort-list-title">
+                                    Сортировать:
+                                </li>
+                                <li>
+                                    <a href="#">По цене</a>
+                                </li>
+                                <li>
+                                    <a href="#">По типу</a>
+                                </li>
+                                <li>
+                                    <a href="#">По функционалу</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="items-show-type">
+                            <a class="items-show-top" href="#"></a>
+                            <a class="items-show-low" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="catalog-products">
+                        <ul class="products-list">
+                            <li>
+                                <a class="product" href="#">
+                                    <img src="img/product-item1.jpg" width="240" height="270" alt="Aviator">
+                                    <div class="product-details">
+                                        <h3 class="medium-title">Aviator</h3>
+                                        <p>Одностраничный макет с авторским дизайном</p>
+                                        <a class="btn btn-price" href="#">800 р.</a>
+                                    </div> 
+                                </a>
+                            </li>
+                            <li>
+                                <a class="product" href="#">
+                                    <img src="img/product-item2.jpg" width="240" height="270" alt="Sunset">
+                                    <div class="product-details">
+                                        <h3 class="medium-title">Sunset</h3>
+                                        <p>Интернет-магазин с личным кабинетом</p>
+                                        <a class="btn btn-price" href="#">10000 р.</a>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="product" href="#">
+                                    <img src="img/product-item3.jpg" width="240" height="270" alt="Forte">
+                                    <div class="product-details">
+                                        <h3 class="medium-title">Forte</h3>
+                                        <p>Отличный макет для личного блога</p>
+                                        <a class="btn btn-price" href="#">5000 р.</a>
+                                    </div>
+                                </a>
 
-    <!-- 
-      Все очень неплохо, подправь отступы и пару мелких комментариев ниже
-      + не пропусти замечания по шапке и футеру на этой странице тоже (эти замечания я описал в index.html)
-     -->
-  </head>
-  <body>
-  	<header class="main-container">
-  	 <div class="container">
-  	 	<a class="main-logo" href="#"><img src="img/nerds-logo.png" width="139" height="56"></a>
-  	 	<nav class="main-navigation">
-  				<ul>
-  					<li>
-  						<a href="#">Студия</a>
-  					</li>
-  					<li>
-  						<a href="#">Клиенты</a>
-  					</li>
-  					<li>
-  						<a href="#">Магазин</a>
-  					</li>
-  					<li>
-  						<a href="#">Контакты</a>
-  					</li>
-  				</ul>
-  				<div class="user-block">
-  					<a class="cart" href="#">Корзина</a>
-  				</div>
-  			</nav>
-  	 </div>
-  	</header>
-  	<main class="container">
-      <h1 class="shop-title">Добро пожаловать в магазин готовых макетов</h1>
-  		<div class="shop">
-  			<section class="catalog-filter">
-          <form action="#" method="get">
-          <div class="price-filter">
-            <h2 class="filter-title">Стоимость:</h2>
-            <div class="price-slider">
-              <!-- Пока не понял как разметить ползунок -->
+                            </li>
+                            <li>
+                                <a class="product" href="#">
+                                    <img src="img/product-item4.jpg" width="240" height="270" alt="Modern Organic Thai">
+                                    <div class="product-details">
+                                        <h3 class="medium-title">Modern Organic Thai</h3>
+                                        <p>Сайт для ресторана быстрого питания</p>
+                                        <a class="btn btn-price" href="#">12000 р.</a>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="product" href="#">
+                                    <img src="img/product-item5.jpg" width="240" height="270" alt="Avenue">
+                                    <div class="product-details">
+                                        <h3 class="medium-title">Avenue</h3>
+                                        <p>Макет для блога о путешествиях</p>
+                                        <a class="btn btn-price" href="#">8000 р.</a>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="product" href="#">
+                                    <img src="img/product-item6.jpg" width="240" height="270" alt="Dovetail">
+                                    <div class="product-details">
+                                        <h3 class="medium-title">Dovetail</h3>
+                                        <p>Интернет-магазин с галереей товаров</p>
+                                        <a class="btn btn-price" href="#">14000 р.</a>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="catalog-products-pagination">
+                            <ul class="products-pagination">
+                                <li>
+                                    <a href="#">1</a>
+                                </li>
+                                <li>
+                                    <a href="#">2</a>
+                                </li>
+                                <li>
+                                    <a href="#">3</a>
+                                </li>
+                                <li>
+                                    <a class="btn" href="#">Следующая</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
             </div>
-            <label for="min-price-field">От</label>
-            <input type="text" id="min-price-field" name="min-price">
-            <label for="max-price-field">До</label>
-            <input type="text" id="max-price-field" name="max-price">
-          </div>
-          <div class="grid-type">
-            <h2 class="filter-title">Сетка:</h2>
-            <ul class="grid-type-list">
-              <li>
-                <input type="radio" name="grid" value="adaptive" id="adaptive-grid" checked>
-                <label for="adaptive-grid">Адаптивная</label>
-              </li>
-              <li>
-                <input type="radio" name="grid" value="fixed" id="fixed-grid">
-                <label for="fixed-grid">Фиксированная</label>
-              </li>
-              <li>
-                <input type="radio" name="grid" value="fluid" id="fluid-grid">
-                <label for="fluid-grid">Резиновая</label>
-              </li>
-            </ul>
-          </div>
-          <div class="feauters">
-            <h2 class="feauters-title">Особенности:</h2>
-            <ul class="feauters-list">
-              <li>
-                <input type="checkbox" name="feauters" value="slider" id="feauters-slider" checked>
-                <label for="feauters-slider">Слайдер</label>
-              </li>
-              <li>
-                <input type="checkbox" name="feauters" value="promo-block" id="feauters-promo-block">
-                <label for="feauters-promo-block">Блок преимуществ</label>
-              </li>
-              <li>
-                <input type="checkbox" name="feauters" value="news" id="feauters-news" checked>
-                <label for="feauters-news">Новости</label>
-              </li>
-              <li>
-                <input type="checkbox" name="feauters" value="gallery" id="feauters-gallery">
-                <label for="feauters-gallery">Галерея</label>
-              </li>
-              <li>
-                <input type="checkbox" name="feauters" value="cart" id="feauters-cart">
-                <label for="feauters-cart">Корзина</label>
-              </li>
-            </ul>
-          </div>
-          <input class="btn" type="submit" value="Показать">
-          </form>   
+        </main>
+        <section class="сontacts">
+            <div class="container">
+                <div class="сontacts-address">
+                    <h4 class="small-title">Nёrds design studio</h4>
+                    <p class="contacts-text">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+                    <p class="contacts-text">тел. +7 (812) 275-75-75</p>
+                    <a class="btn" href="#">Напишите нам</a>
+                </div>
+            </div>
         </section>
-        <section class="catalog">
-          <div class="catalog-sort">
-            <div class="catalog-sort-list">
-              <ul class="sort-list">
-                <li class="sort-list-title">
-                  Сортировать:
-                </li>
-                <li>
-                  <a href="#">По цене</a>
-                </li>
-                <li>
-                  <a href="#">По типу</a>
-                </li>
-                <li>
-                  <a href="#">По функционалу</a>
-                </li>
-              </ul>
+        <footer class="main-footer">
+            <div class="container">
+                <div class="footer-social"> 
+                    <a class="social-btn social-btn-vk" href="#"></a>
+                    <a class="social-btn social-btn-fb" href="#"></a>
+                    <a class="social-btn social-btn-inst" href="#"></a>
+                </div>
+                <section class="footer-right">
+                    <h2 class="call-to-action">Давайте дружить, это выгодно!</h2> 
+                    <p>Скидка 10% для друзей из социальных сетей.</p>
+                </section>
             </div>
-            <div class="items-show-type">
-              <a class="items-show-top" href="#"></a>
-              <a class="items-show-low" href="#"></a>
-            </div>
-          </div>
-          <div class="catalog-products">
-            <div class="catalog-products-list"> <!-- Этот div можно было бы и не добавлять, достаточно списка ниже -->
-              <ul class="products-list">
-                <li>
-                  <a class="product" href="#">
-                    <img src="img/product-item1.jpg"> <!-- alt и размеры для изображения -->
-                    <!-- 
-                      Обрати внимание что там в скрытых слоях есть блок, который должен появляться внутри этого блока при наведении на него
-                      Его нужно разметить
-                     -->
-                  </a>
-                </li>
-                <li>
-                  <a class="product" href="#">
-                    <img src="img/product-item2.jpg">
-                  </a>
-                </li>
-                <li>
-                  <a class="product" href="#">
-                    <img src="img/product-item3.jpg">
-                  </a>
-                </li>
-                <li>
-                  <a class="product" href="#">
-                    <img src="img/product-item4.jpg">
-                  </a>
-                </li>
-                <li>
-                  <a class="product" href="#">
-                    <img src="img/product-item5.jpg">
-                  </a>
-                </li>
-                <li>
-                  <a class="product" href="#">
-                    <img src="img/product-item6.jpg">
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="catalog-products-pagination">
-              <ul class="products-pagination">
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a class="btn" href="#">Следующая</a></li>
-              </ul>
-            </div>
-          </div>
-        </section>
-  		</div>
-  	</main>
-  	<section class="сontacts">
-      <div class="container">
-        <div class="сontacts-address">
-          <h2 class="сontacts--title">Nёrds design studio</h2>
-          <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8тел.</p>
-          <p>+7 (812) 275-75-75</p>
-          <a class="btn" href="#">Напишите нам</a>
-        </div>
-      </div>
-    </section>
-    <footer class="main-footer">
-      <div class="container">
-        <section class="footer-social">
-          <a class="social-btn social-btn-vk" href="#"></a>
-          <a class="social-btn social-btn-fb" href="#"></a>
-          <a class="social-btn social-btn-inst" href="#"></a>
-        </section>
-        <section class="footer-right">
-          <b class="call-to-action">Давайте дружить, это выгодно!</b>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
-        </section>
-      </div>
-    </footer>
-  </body>
+        </footer>
+    </body>
 </html>
