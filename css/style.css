@@ -3,20 +3,23 @@ body {
     font-size: 16px;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .main-header {
     background-color: #eee;
     border: 1px solid red;
+    margin-bottom: 80px;
 }
 
     .main-logo {
-        display: inline-block;
         float: left;
         min-height: 85px;
         border: 1px solid blue;
     }
 
     .main-navigation {
-        display: inline-block;
         float: right;
         width: 560px;
         min-height: 85px;
@@ -31,8 +34,6 @@ body {
         }
 
             .main-navigation li {
-                display: inline-block;
-                vertical-align: top;
                 float: left;
                 margin: 32px 22px 0 22px;
                 font-size: 14px;
@@ -52,15 +53,16 @@ body {
     width: 900px;
     margin: 0 auto;
     padding: 0 10px;
-    border: 1px solid green;
 }
 
-.promo-gallery {
-    min-height: 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .products {
-    border: 1px solid red;
+    margin-bottom: 80px;
 }
 
     .products-item {
@@ -78,6 +80,41 @@ body {
         font-size: 15px;
     }
 
+.index-content-1 {
+    border: 1px solid red;
+}
+
+.left-description {
+    width: 620px;
+    float: left;
+    border: 1px solid green;
+}
+
+    .logo {
+        width: 240px;
+        float: right;
+        border: 1px solid green;
+    } 
+
+        .logo i {
+            display: block;
+        }
+
+.index-content-2 {
+    border: 1px solid red; 
+}
+
+.content-list-left {
+    width: 620px;
+    float: left;
+    border: 1px solid green;
+}
+
+.content-list-right {
+    width: 240px;
+    float: right;
+}
+
 .medium-title {
     font-size: 18px;
     text-transform: uppercase;
@@ -88,8 +125,24 @@ body {
     text-transform: uppercase;
 }
 
-.index-content {
-    clear: both;
+.partners {
+    border: 1px solid green;
+}
+
+
+.index-content-right {
+    float: right;
+    width: 240px;
+    border: 1px solid red;
+}
+
+.partners {
+    text-align: center;
+}
+
+.partners-item {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .btn-price {
